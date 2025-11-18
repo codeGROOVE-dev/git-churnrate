@@ -42,14 +42,6 @@ churnrate --org kubernetes --days 30
 - **Total Churn Rate**: Total lines changed as percentage of codebase
 - **Git Depth**: Shallow clone depth (days × 35 commits)
 
-## Algorithm
-
-1. Shallow clone repository (35 commits per day)
-2. Count lines in tracked files
-3. Aggregate additions/deletions by ISO week
-4. Exclude first week (bootstrap commits)
-5. Calculate churn statistics
-
 ## Programmatic Use
 
 ```go
